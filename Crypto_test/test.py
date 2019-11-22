@@ -19,11 +19,8 @@ def shift_one(numb):
 for i in range(len(data)):
     out[i] = data[i] ^ key[i % len(key)]
 
-
-
-
-# the 14 turn
-for _ in range(14):
+# the 13 turn
+for _ in range(13):
     # substitution
     for i in range(len(out)):
        out[i] = 256 - out[i]
